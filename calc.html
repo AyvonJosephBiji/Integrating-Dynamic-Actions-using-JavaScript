@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://i.pinimg.com/originals/43/28/c3/4328c30611e0c3a5556fa1d4cb35dae7.png" />
+    <link rel="stylesheet" href="calcStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>Basic Calculator</div>
+        <br>
+        <div>
+            <input id="t1" type="text" placeholder="Num1">
+        </div>
+        <div>
+            <input id="t2" type="text" placeholder="Num2">
+        </div>
+        <div id="panel">
+            <div class="section">
+                <button onclick="add()">+</button>
+                <button onclick="subtract()">-</button>
+            </div>
+            <div class="section">
+                <button onclick="multiply()">x</button>
+                <button onclick="divide()">/</button>
+            </div>
+        </div>
+        <div>
+            <input id="result" type="text" placeholder="Result" readonly>
+        </div>
+        <div>
+            <button id="clear" onclick="clearFields()">Clear</button>
+        </div>
+        <br>
+    </div>
+
+    <script src="calcScript.js"></script>
+</body>
+
+</html>

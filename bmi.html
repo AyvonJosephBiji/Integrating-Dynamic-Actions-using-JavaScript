@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://i.pinimg.com/originals/43/28/c3/4328c30611e0c3a5556fa1d4cb35dae7.png" />
+    <link rel="stylesheet" href="bmiStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>BMI Calculator</div>
+        <br>
+        <div>
+            <label>Weight:</label>
+            <input id="t1" type="text" onkeyup="update()" placeholder="Weight">
+            <label>kg</label>
+        </div>
+        <div>
+            <label>Height:</label>
+            <input id="t2" type="text" onkeyup="update()" placeholder="Height">
+            <label>cm</label>
+        </div>
+        <br>
+        <div>
+            <input id="result" type="text" placeholder="Result" readonly>
+            <br>
+            <label id="remark">Remark</label>
+        </div>
+        <div>
+            <button id="clear" onclick="clearFields()">Clear</button>
+        </div>
+        <br>
+    </div>
+
+    <script src="bmiScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://i.pinimg.com/originals/43/28/c3/4328c30611e0c3a5556fa1d4cb35dae7.png" />
+    <link rel="stylesheet" href="currStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>Currency Converter</div>
+        <div>
+            <label>Amount:</label>
+            <br>
+            <input id="amount" type="text" onkeyup="update()" placeholder="Amount">
+        </div>
+        <div>
+            <label>From:</label>
+            <br>
+            <select name="from" id="from" onchange="update()">
+ <option value="1">USD</option>
+ <option value="2">INR</option>
+ <option value="3">YEN</option>
+ </select>
+        </div>
+        <div>
+            <label>To:</label>
+            <br>
+            <select name="to" id="to" onchange="update()">
+ <option value="1">USD</option>
+ <option value="2">INR</option>
+ <option value="3">YEN</option>
+ </select>
+        </div>
+        <br>
+        <div>
+            <input id="result" type="text" placeholder="Result" readonly>
+        </div>
+        <div>
+            <button id="clear" onclick="reset()">Reset</button>
+        </div>
+        <br>
+    </div>
+
+    <script src="currScript.js"></script>
+</body>
+
+</html>
